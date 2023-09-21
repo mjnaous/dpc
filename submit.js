@@ -29,19 +29,19 @@ document.getElementById("user-created").innerHTML = "Created at: " + createdAt;
 
     switch (status) {
       case "online":
-        document.getElementById("status").src = "../assets/online.png";
+        document.getElementById("status").src = "https://i.mjnaous.repl.co/online.png";
         break;
       case "idle":
-        document.getElementById("status").src = "../assets/idle.png";
+        document.getElementById("status").src = "https://i.mjnaous.repl.co/idle.png";
         break;
       case "dnd":
-        document.getElementById("status").src = "../assets/dnd.png";
+        document.getElementById("status").src = "https://i.mjnaous.repl.co/dnd.png";
         break;
       case "streaming":
-        document.getElementById("status").src = "../assets/streaming.png";
+        document.getElementById("status").src = "https://i.mjnaous.repl.co/streaming.png";
         break;
       default:
-        document.getElementById("status").src = "../assets/offline.png";
+        document.getElementById("status").src = "https://i.mjnaous.repl.co/offline.png";
     }
 
     if (res.presence.activities) {
