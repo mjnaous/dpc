@@ -12,8 +12,7 @@ async function submit() {
     var avatar = "https://cdn.discordapp.com/avatars/" + id + "/" + avatarID;
     var bannerColor = res.data.banner_color;
     var accentColor = res.data.accent_color;
-    var createdAt =
-res.data.createdAt;
+
     document.getElementById("avatar").src = avatar;
     document.getElementById("user-id").innerHTML = "User ID: " + id;
     document.getElementById("user-username").innerHTML =
@@ -24,8 +23,6 @@ res.data.createdAt;
       "Banner Color: " + bannerColor;
     document.getElementById("user-accent-color").innerHTML =
       "Accent Color: " + accentColor;
-
-document.getElementById("user-created").innerHTML = "Created at: " + createdAt;
 
     switch (status) {
       case "online":
