@@ -26,19 +26,19 @@ async function submit() {
 
     switch (status) {
       case "online":
-        document.getElementById("status").src = "https://i.mjnaous.repl.co/online.png";
+        document.getElementById("status").src = "online.png";
         break;
       case "idle":
-        document.getElementById("status").src = "https://i.mjnaous.repl.co/idle.png";
+        document.getElementById("status").src = "idle.png";
         break;
       case "dnd":
-        document.getElementById("status").src = "https://i.mjnaous.repl.co/dnd.png";
+        document.getElementById("status").src = "dnd.png";
         break;
       case "streaming":
-        document.getElementById("status").src = "https://i.mjnaous.repl.co/streaming.png";
+        document.getElementById("status").src = "streaming.png";
         break;
       default:
-        document.getElementById("status").src = "https://i.mjnaous.repl.co/offline.png";
+        document.getElementById("status").src = "offline.png";
     }
 
     if (res.presence.activities) {
